@@ -1,11 +1,21 @@
+@font-face {
+    font-family: 'Ancient Tales';
+    src: url('/fonts/AncientModernTales-a7Po.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --bg-dark: #121212;
     --bg-panel: #1a1a1a;
     --text-main: #e0e0e0;
     --accent-crimson: #8b0000;
     --accent-silver: #c0c0c0;
+    --accent-red: #A50000;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-mono: 'Courier New', Courier, monospace;
+    --font-title: 'Ancient Tales', cursive;
 }
 
 body {
@@ -31,10 +41,10 @@ body {
 
 
 .logo {
-    width: 180px;
+    width: 300px;
     height: auto;
-    margin-bottom: 30px;
-    filter: drop-shadow(0px 4px 10px rgba(192, 192, 192, 0.2));
+    margin:0px 0px 0px;
+    filter: drop-shadow(0px 4px 10px rgba(154, 152, 152, 0.762));
 }
 
 h1 {
@@ -46,7 +56,7 @@ h1 {
 }
 
 .subtitle {
-    color: var(--accent-crimson);
+    color:var(--accent-red);
     font-family: var(--font-mono);
     font-size: 1.1em;
     margin-bottom: 100px;
@@ -143,9 +153,8 @@ h1 {
 
 .section-title {
     color: var(--accent-silver);
-    font-family: var(--font-mono);
-    font-size: 1.5em;
-    text-transform: uppercase;
+    font-family: var(--font-title);
+    font-size: 2.0em;
     margin-top: 0px;
     margin-bottom: 60px;
     letter-spacing: 2px;
@@ -174,15 +183,13 @@ h1 {
     text-align: left;
 }
 
-
 .cyber-box:hover {
     border-color: var(--accent-crimson);
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.6), inset 0 0 10px rgba(139, 0, 0, 0.2);
     transform: translateY(-5px);
 }
 
-
-.cyber-box::before {
+.cyber-box:before {
     content: '';
     position: absolute;
     top: -100%;
@@ -226,12 +233,12 @@ h1 {
     text-transform: uppercase;
 }
 
-
 .wolf-companion-container {
     display: flex;
     justify-content: center;
     margin: 50px 0;
     width: 100%;
+    gap: 20px;
 }
 
 .pixel-wolf {
@@ -272,7 +279,6 @@ h1 {
     filter: drop-shadow(0px 0px 20px rgba(139, 0, 0, 1));
 }
 
-/*física da flutuação */
 @keyframes idleFloat {
     0% {
         transform: translateY(0px);
