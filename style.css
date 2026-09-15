@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Ancient Tales';
     src: url('/fonts/AncientModernTales-a7Po.ttf') format('truetype');
@@ -139,18 +143,6 @@ h1 {
     text-transform: uppercase;
 }
 
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    .manifesto-container {
-        flex-direction: column;
-    }
-}
-
-
 .section-title {
     color: var(--accent-silver);
     font-family: var(--font-title);
@@ -242,7 +234,7 @@ h1 {
 }
 
 .pixel-wolf {
-    width: 350px;
+    width: 200px;
     height: auto;
     image-rendering: pixelated;
     filter: drop-shadow(0px 0px 12px rgba(139, 0, 0, 0.8));
@@ -290,5 +282,35 @@ h1 {
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .manifesto-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px; 
+    }
+
+    .manifesto-container > div {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 25px; 
+    }
+
+    .grid-container {
+        padding: 0 15px;
+        grid-template-columns: 1fr; 
     }
 }
