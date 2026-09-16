@@ -3,23 +3,37 @@
 }
 
 @font-face {
-    font-family: 'Ancient Tales';
-    src: url('/fonts/AncientModernTales-a7Po.ttf') format('truetype');
+    font-family: 'Rajdhani';
+    src: url('/fonts/Rajdhani/Rajdhani-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/static/Inter_18pt-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rajdhani_semiBold';
+    src: url('/fonts/Rajdhani/Rajdhani-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
-    --bg-dark: #121212;
-    --bg-panel: #1a1a1a;
+    --bg-dark: #000000;
+    --bg-panel: #080707;
     --text-main: #e0e0e0;
     --accent-crimson: #8b0000;
     --accent-silver: #c0c0c0;
     --accent-red: #A50000;
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-main: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-mono: 'Courier New', Courier, monospace;
-    --font-title: 'Ancient Tales', cursive;
+    --font-title: 'Rajdhani', cursive;
+    --font-subtitle: 'rajdhani_semiBold', cursive;
 }
 
 body {
@@ -45,27 +59,28 @@ body {
 
 
 .logo {
-    width: 300px;
+    width: 240px;
     height: auto;
-    margin:0px 0px 0px;
+    margin:0px 0px 0px 0px;
     filter: drop-shadow(0px 4px 10px rgba(154, 152, 152, 0.762));
 }
 
 h1 {
     color: var(--accent-silver);
-    font-size: 2.5em;
+    font-size: 2.9em;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-transform: uppercase;
+    font-family: var(--font-title);
 }
 
 .subtitle {
     color:var(--accent-red);
-    font-family: var(--font-mono);
+    font-family: var(--font-main);
     font-size: 1.1em;
     margin-bottom: 100px;
     letter-spacing: 1px;
-    font-weight: bold;
+
 }
 
 .manifesto-container {
@@ -94,14 +109,6 @@ h1 {
     box-shadow: 0 0 15px rgba(139, 0, 0, 0.6), inset 0 0 10px rgba(139, 0, 0, 0.2);
 }
 
-.manifesto-column h2 {
-    color: var(--accent-silver);
-    font-size: 1.3em;
-    margin-top: 0;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-}
 
 .manifesto-column p {
     line-height: 1.6;
@@ -148,7 +155,7 @@ h1 {
     font-family: var(--font-title);
     font-size: 2.0em;
     margin-top: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     letter-spacing: 2px;
     border-bottom: 1px solid var(--accent-crimson);
     display: inline-block;
@@ -202,7 +209,7 @@ h1 {
     color: var(--accent-silver);
     font-size: 1.2em;
     margin-top: 0;
-    font-family: var(--font-mono);
+    font-family: var(--font-subtitle);
 }
 
 .cyber-box p {
@@ -218,7 +225,7 @@ h1 {
     border: 1px solid var(--accent-crimson);
     padding: 3px 8px;
     font-size: 0.75em;
-    font-family: var(--font-mono);
+    font-family: var(--font-main);
     border-radius: 3px;
     margin-right: 5px;
     margin-top: 10px;
@@ -234,13 +241,15 @@ h1 {
 }
 
 .pixel-wolf {
-    width: 200px;
+    width: 350px;
     height: auto;
     image-rendering: pixelated;
     filter: drop-shadow(0px 0px 12px rgba(139, 0, 0, 0.8));
     animation: idleFloat 3s ease-in-out infinite;
     cursor: pointer;
     transition: transform 0.2s ease;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .pixel-wolf:hover {
@@ -257,13 +266,15 @@ h1 {
 }
 
 .pixel-arvore {
-    width: 400px;
+    width: 440px;
     height: auto;
     image-rendering: pixelated;
     filter: drop-shadow(0px 0px 12px rgba(139, 0, 0, 0.8));
     animation: idleFloat 3s ease-in-out infinite;
     cursor: pointer;
     transition: transform 0.2s ease;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .pixel-arvore:hover {
