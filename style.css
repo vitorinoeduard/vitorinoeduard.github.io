@@ -143,28 +143,28 @@ h1 {
 }
 
 .btn-loot-style {
-  position: static;             /* Garante que respeita o fluxo normal */
-  width: auto;            
-  min-width: 260px;         
-  height: auto;            
-  padding: 0.8rem 1.8rem;
-  white-space: nowrap;     
-  align-self: center;
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--accent-red);
-  border: 1px solid var(--accent-red);
-  font-family: var(--font-title);
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  margin: 10px 0;
+    position: static;
+    width: auto;
+    min-width: 260px;
+    height: auto;
+    padding: 0.8rem 1.8rem;
+    white-space: nowrap;
+    align-self: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--accent-red);
+    border: 1px solid var(--accent-red);
+    font-family: var(--font-title);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin: 10px 0;
 }
 
 .btn-loot-style:hover {
-  background-color: var(--accent-red);
-  color: var(--bg-dark);
+    background-color: var(--accent-red);
+    color: var(--bg-dark);
 }
 
 .footer-links {
@@ -216,7 +216,7 @@ h1 {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    gap: 40px;
     width: 100%;
     margin-bottom: 60px;
 }
@@ -245,7 +245,7 @@ h1 {
     top: -100%;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 20px;
     background-color: var(--accent-crimson);
     box-shadow: 0 0 10px var(--accent-crimson);
     transition: all 0.5s ease;
@@ -333,21 +333,44 @@ h1 {
     filter: drop-shadow(0px 0px 20px rgba(139, 0, 0, 1));
 }
 
+.pixel-caverna {
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin: 100px auto 10px auto;
+    height: auto;
+    image-rendering: pixelated;
+    filter: drop-shadow(0px 0px 9px rgba(139, 0, 0, 0.8));
+    animation: idleFloat 3s ease-in-out infinite;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.pixel-caverna:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 20px rgba(139, 0, 0, 1));
+}
+
 .loot-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;    
-  justify-content: center;
-  gap: 1.5rem;             
-  min-height: auto; 
-  margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    min-height: auto;
+    margin: 2rem auto;
 }
 
 .loot-title {
-    color: var(--text-main);
+    color: var(--accent-silver);
     font-family: var(--font-title);
+    font-size: 2.0em;
+    margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 2em;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--accent-crimson);
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .loot-loading-container {
@@ -369,6 +392,7 @@ h1 {
     margin-top: 50px;
     width: 100%;
     max-width: 800px;
+    gap: 40px;
 }
 
 .loot-card {
@@ -384,10 +408,10 @@ h1 {
     transition: transform 0.3s ease;
 }
 
-.loot-card h3{
-font-family: var(--font-subtitle);
-font-size: 1.5em;
-margin-top: 0;
+.loot-card h3 {
+    font-family: var(--font-subtitle);
+    font-size: 1.5em;
+    margin-top: 0;
 }
 
 .loot-card p {
