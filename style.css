@@ -38,6 +38,10 @@
     --font-subtitle: 'rajdhani_semiBold', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-main);
@@ -50,6 +54,43 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+    padding-top: 60px;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(8, 7, 7, 0.85);
+    backdrop-filter: blur(8px); 
+    padding: 15px 0;
+    z-index: 1000; 
+    border-bottom: 1px solid var(--accent-crimson);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--accent-silver);
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-red);
+    text-shadow: 0 0 12px rgba(139, 0, 0, 0.9);
 }
 
 .container {
@@ -493,5 +534,13 @@ h1 {
     .grid-container {
         padding: 0 15px;
         grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 20px; 
+    }
+    
+    .nav-links a {
+        font-size: 1em; 
     }
 }
