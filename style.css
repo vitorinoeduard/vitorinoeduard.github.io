@@ -518,11 +518,15 @@ h1 {
     body {
         overflow-x: hidden;
         width: 100%;
-        padding-top: 100px;
+        padding-top: 40px;
     }
 
     h1 {
         font-size: 2em;
+    }
+
+    .container{
+        padding-top: 10px;
     }
 
     .manifesto-container {
