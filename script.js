@@ -1,5 +1,4 @@
 // --- CONT DE IDMA---
-
 const btnToggle = document.getElementById('lang-toggle');
 const textPT = document.getElementById('manifesto-pt');
 const textEN = document.getElementById('manifesto-en');
@@ -18,7 +17,6 @@ if (btnToggle && textPT && textEN) {
 }
 
 // --- CONT CAVE ---
-
 const btnLoot = document.getElementById('btn-loot');
 const lootLoading = document.getElementById('loot-loading');
 const lootGrid = document.getElementById('loot-grid');
