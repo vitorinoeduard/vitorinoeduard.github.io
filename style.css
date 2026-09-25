@@ -57,8 +57,9 @@ body {
     padding-top: 60px;
 }
 
-#zona-manifesto, 
-#zona-habilidades, 
+
+#zona-manifesto,
+#zona-habilidades,
 #zona-loot {
     scroll-margin-top: 120px;
 }
@@ -69,9 +70,9 @@ body {
     left: 0;
     width: 100%;
     background-color: rgba(8, 7, 7, 0.85);
-    backdrop-filter: blur(8px); 
+    backdrop-filter: blur(8px);
     padding: 15px 0;
-    z-index: 1000; 
+    z-index: 1000;
     border-bottom: 1px solid var(--accent-crimson);
 }
 
@@ -184,6 +185,30 @@ h1 {
     transition: all 0.3s ease;
 }
 
+.btn-projetos{
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(146, 137, 137);
+    border: 2px inset var(--accent-red);
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    font-family: var(--font-title);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.btn-projetos:hover {
+    background-color: var(--accent-red);
+    color: var(--bg-dark);
+}
+
 .btn-lang:hover {
     background-color: var(--accent-red);
     color: var(--bg-dark);
@@ -191,7 +216,7 @@ h1 {
 
 .btn-loot-style {
     position: static;
-    width: auto;
+    width: fit-content;
     min-width: 260px;
     height: auto;
     padding: 0.8rem 1.8rem;
@@ -200,13 +225,15 @@ h1 {
     cursor: pointer;
     background-color: transparent;
     color: var(--accent-red);
-    border: 1px solid var(--accent-red);
+    border: 2px solid var(--accent-red);
+    border-radius: 2px;
     font-family: var(--font-title);
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: all 0.3s ease;
     margin: 10px 0;
+
 }
 
 .btn-loot-style:hover {
@@ -218,7 +245,8 @@ h1 {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .footer-links a {
@@ -227,7 +255,7 @@ h1 {
     padding: 10px 20px;
     border: 1px solid var(--accent-silver);
     border-radius: 5px;
-    font-family: var(--font-mono);
+    font-family: var(--font-title);
     font-size: 0.9em;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -246,6 +274,7 @@ h1 {
     color: #555;
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .section-title {
@@ -330,31 +359,6 @@ h1 {
     text-transform: uppercase;
 }
 
-.wolf-companion-container {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    width: 100%;
-    gap: 20px;
-}
-
-.pixel-wolf {
-    width: 350px;
-    height: auto;
-    image-rendering: pixelated;
-    filter: drop-shadow(0px 0px 12px rgba(139, 0, 0, 0.8));
-    animation: idleFloat 3s ease-in-out infinite;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.pixel-wolf:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0px 0px 20px rgba(139, 0, 0, 1));
-}
-
 .arvore-container {
     display: flex;
     justify-content: center;
@@ -387,7 +391,6 @@ h1 {
     margin: 100px auto 10px auto;
     height: auto;
     image-rendering: pixelated;
-    filter: drop-shadow(0px 0px 9px rgba(139, 0, 0, 0.8));
     animation: idleFloat 3s ease-in-out infinite;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -405,7 +408,7 @@ h1 {
     justify-content: center;
     gap: 1.5rem;
     min-height: auto;
-    margin: 2rem auto;
+    margin: 2rem auto 100px auto;
 }
 
 .loot-title {
@@ -462,8 +465,12 @@ h1 {
     width: 100%;
     max-width: 380px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    text-align: left;
+    text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .loot-card h3 {
@@ -486,6 +493,10 @@ h1 {
 .loot-card-title {
     color: var(--accent-red);
     margin-bottom: 10px;
+}
+
+.tec-usadas {
+    font-family: var(--font-mono);
 }
 
 
@@ -536,7 +547,7 @@ h1 {
         font-size: 2em;
     }
 
-    .container{
+    .container {
         padding-top: 10px;
     }
 
@@ -559,10 +570,10 @@ h1 {
     }
 
     .nav-links {
-        gap: 20px; 
+        gap: 20px;
     }
-    
+
     .nav-links a {
-        font-size: 1em; 
+        font-size: 1em;
     }
 }
